@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>pro</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
+  <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/howto/howto_js_collapse_sidepanel.asp">
+  <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/howto/howto_css_icon_buttons.asp">
+  <link rel="stylesheet" type="text/css" href="css/pro.css">
+  <link rel="stylesheet" type="text/css" href="http://www.bootstrapicons.com/">
+   
+
+  <style>
+  	.navbar {
+    margin-bottom: 0px; 
+}
+
+/*.dm-uploader .btn-primary {
+    color: #fff;
+    background-color: black;
+    border-color: #3c80ba;
+}
+
+.dm-uploader .btn input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    border: solid transparent;
+    width: 732px;;
+    opacity: 0;
+    cursor: pointer;
+}*/
+.dm-uploader .bnt-primary {
+color: #fff;
+background-color: #3c80ba;
+border-color: #3c80ba;
+}
+
+.dm-uploader  input[type=file]
+{
+  position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    border: solid transparent;
+    width: 200%;
+    opacity: 0;
+    cursor: pointer;
+
+}
+
+@media all and (min-width: 600px)
+{
+  .form-group{
+    flex-direction: row;
+  }
+  .form-group label{
+    flex-basis: 9rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .form-group input,
+   .form-group select,
+    .form-group textarea {
+    flex-basis: 0rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+  } 
+
+   .form-group button{
+    flex-basis: 9rem;
+    
+   }
+   input{
+    width: 50%
+   }
+}
+
+.flex-v-center {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    width: 750px;
+  }
+}
+
+@media screen and (max-width: 755px) {
+  .navbar {
+    width: 753px;
+  }
+}
+
+
+
+  </style>
+
+  
+</head>
+ <body style="overflow: auto;">
+  <nav class="navbar navbar-default">
+   <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>                        
+      </button>
+     <a class="navbar-brand" href="#">Home page</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+
+        <li><a href="#">Mail</a></li>
+        <li><a href="#">Report</a></li> 
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Help desk</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span>Hokim</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+   </div>
+  </div>
+</nav>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 col-lg-offset-2 text-center">
+     <div class="panel panel-default" style="width: 738px">
+      <div class="panel-heading">Yangi hujjatni ro'yhatdan o'tkazish</div>
+        <div class="panel-body">
+         <form>
+          <div class="form-group row flex-v-center">
+           <div class="col-md-3 col-sm-3 col-xs-3" align="left">
+            <label >Kimdan&nbsp</label>
+           </div>
+           <div class="col-md-6 col-sm-6 col-xs-6">
+            <input type="text" class="form-control"  id="inputPassword" placeholder="">
+           </div>
+          </div>
+          <div class="form-group row flex-v-center">
+           <div  class="col-md-3  col-sm-3 col-xs-3" align="left">  
+            <label for="inputPassword">Hujjat turi&nbsp</label>
+           </div>
+            <div class=" col-md-6 col-sm-6 col-xs-6 ">
+             <select class="form-control form-control-lg col-md-1"><option>Hujjat turini tanlang</option></select>
+            </div>
+          </div>
+          <div class="form-group row  flex-v-center">
+           <div  class="col-md-3 col-sm-3 col-xs-3" align="left">       
+            <label>Kirish nomeri</label>
+           </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+             <input type="password" class="form-control" id="inputPassword" placeholder="">
+            </div> 
+           </div>
+           <div class="form-group row  flex-v-center">
+            <div  class="col-md-3 col-sm-3 col-xs-3" align="left"> 
+             <label>Kirish sanasi</label>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+              <select class="form-control form-control-lg col-md-1"><option>Kirish sanasini tanlang</option></select>
+            </div>
+           </div>
+           <div class="form-group row  flex-v-center">
+            <div  class="col-md-3 col-sm-3 col-xs-3" align="left" >    
+             <label>Chiqish nomeri</label>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+             <input type="password" class="form-control" id="inputPassword" placeholder="">
+            </div>
+           </div>
+           <div class="form-group row  flex-v-center">
+            <div  class="col-md-3 col-sm-3 col-xs-3" align="left"> 
+              <label>Chiqish sanasi</label>
+            </div>
+            <div class="col-md-6  col-sm-6 col-xs-6">
+             <select class="form-control form-control-lg col-md-1"><option>Chiqish sanasini tanlang</option></select>
+            </div>
+           </div>
+           <div class="form-group row  flex-v-center">
+            <div  class="col-md-3 col-sm-3 col-xs-3" align="left"> 
+             <label>Hujjat mazmuni</label>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+              <textarea type="password" class="form-control form-control-lg col-md-1" id="inputPassword" rows="7" ></textarea>
+            </div>
+           </div>
+           <div class="form-group row  flex-v-center">
+            <div  class="col-md-3 col-sm-3 col-xs-3" align="left"> 
+             <label >Hujjat ilovasi</label>
+            </div>                 
+            <div class=" col-md-6 dm-uploader">
+             <div class="col-md-6 btn btn-primary btn-sm ">
+                <span class="glyphicon glyphicon-cloud-upload">&nbspYUKLASH</span>
+                <input  type="file" ng-if="uploader" nv-file-select="" uploader="uploader" title="Click to add Files" multiple="">
+             </div>             
+            </div>
+           </div>
+           <div class="form-group row">
+            <div class="col-xs-3 col-sm-3  col-md-3 col-lg-3 col-xl-3 "></div>
+             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+              <div class="col-xs-9 col-sm-0 col-md-3 col-lg-3 col-xl-3 progress">
+               <div class="progress-bar" style="min-width: 20px;">
+        2%
+               </div>
+              </div>
+              <div class="col-xs-10  col-sm-10 col-md-10 col-lg-10 col-xl-10">
+               <div class="form-group row  flex-v-center">
+                <div class="col-xs-5 col-sm-6 col-md-5 col-lg-5 col-xl-5">
+                   <button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-remove" ></span>&nbsp Bekor qilish</button></div>
+                  <div class="col-xs-5 col-sm-6 col-md-5 col-lg-5 col-xl-5">  
+                   <button type="button" class="btn btn-primary btn-sm ">
+                   <span class="glyphicon glyphicon-floppy-disk" style="color: #f0f3f7"></span>&nbsp Saqlash</button></div>
+                  </div>
+                </div>
+               </div>
+               <div class="col-xs-5 col-sm-6 col-md-5 col-lg-5 col-xl-5"></div>
+              </div>
+            </div>
+          </form>
+         </div>
+        </div>
+       </div>
+    </div>
+  </div>
+</div>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</body>
+</html>
